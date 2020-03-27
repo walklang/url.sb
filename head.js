@@ -2,7 +2,7 @@ const endpoint = 'https://www.jsonstore.io/d4d04c066563a19493bd5dde589c4dbf20c94
 const ebox = document.getElementById('erbox')
 const fetchJSON = (a) => {
 	const request = new XMLHttpRequest()
-	request.open('GET', a, false)
+	request.open('POST', a, true)
 	request.setRequestHeader('Access-Control-Allow-Origin', '*')
 	request.setRequestHeader('Access-Control-Allow-Headers', 'Authorization, Access-Control-Allow-Headers, Origin, Content-Type, Content-Length, Accept')
 	request.onreadystatechange = oEvent => {
